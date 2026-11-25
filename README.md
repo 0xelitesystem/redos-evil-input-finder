@@ -1,8 +1,8 @@
-# regex-redos-checker
+# redos-evil-input-finder
 
 Browser-based checker for catastrophic backtracking and ReDoS-prone regex patterns. Paste a pattern, get findings on the structures most likely to cause exponential or polynomial blowup, plus an evil-input synthesizer that produces a minimal string to demonstrate the worst case.
 
-**Live demo:** https://0xelitesystem.github.io/regex-redos-checker/
+**Live demo:** https://0xelitesystem.github.io/redos-evil-input-finder/
 
 Single HTML file, pentest-report aesthetic (default light theme, dark toggle). No build step, no dependencies, no network calls.
 
@@ -56,8 +56,8 @@ Patterns and test inputs stay in the browser. No analytics, no storage. The one 
 ## Run locally
 
 ```
-git clone https://github.com/0xelitesystem/regex-redos-checker
-cd regex-redos-checker
+git clone https://github.com/0xelitesystem/redos-evil-input-finder
+cd redos-evil-input-finder
 ```
 
 Open `index.html` in a browser, or serve the folder with `python -m http.server` and visit http://localhost:8000.
@@ -75,7 +75,7 @@ Five samples are wired to header buttons: a benign pattern (passes), a classic n
 Part of a 10-repo security audit set.
 
 Browser-based audit tools:
-- [iam-policy-analyzer](https://github.com/0xelitesystem/iam-policy-analyzer)
+- [iam-policy-risk-flagger](https://github.com/0xelitesystem/iam-policy-risk-flagger)
 - [hcl-aws-misconfig-linter](https://github.com/0xelitesystem/hcl-aws-misconfig-linter)
 - [kubernetes-manifest-security-scanner](https://github.com/0xelitesystem/kubernetes-manifest-security-scanner)
 - [session-cookie-auditor](https://github.com/0xelitesystem/session-cookie-auditor)
